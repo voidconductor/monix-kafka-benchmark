@@ -1,16 +1,12 @@
+package benchmark
+
 import com.typesafe.scalalogging.StrictLogging
 import monix.eval.Task
-import monix.execution.{Callback, Cancelable, Scheduler}
 import monix.execution.atomic.Atomic
 import monix.execution.cancelables.{SingleAssignCancelable, StackedCancelable}
+import monix.execution.{Callback, Cancelable, Scheduler}
 import monix.kafka.{KafkaProducer, KafkaProducerConfig, Serializer}
-import org.apache.kafka.clients.producer.{
-  ProducerRecord,
-  RecordMetadata,
-  Callback => KafkaCallback,
-  KafkaProducer => ApacheKafkaProducer
-}
-
+import org.apache.kafka.clients.producer.{ProducerRecord, RecordMetadata, Callback => KafkaCallback, KafkaProducer => ApacheKafkaProducer}
 
 import scala.util.control.NonFatal
 

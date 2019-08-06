@@ -11,7 +11,7 @@ vendor: AdoptOpenJDK
 version: 11.0.4+11
 Parameters(messages -> 10000): 2262.172311 ms
 
-::Benchmark ModifiedProducer.send::
+::Benchmark benchmark.ModifiedProducer.send::
 cores: 12
 hostname: MacBook-Pro-Vasilij.local
 name: OpenJDK 64-Bit Server VM
@@ -20,8 +20,26 @@ osName: Mac OS X
 vendor: AdoptOpenJDK
 version: 11.0.4+11
 Parameters(messages -> 10000): 1603.762846 ms
+```
 
-Disconnected from the target VM, address: '127.0.0.1:54925', transport: 'socket'
+```
+::Benchmark WanderN.semaphore::
+cores: 12
+hostname: MBP-Vasilij
+name: OpenJDK 64-Bit Server VM
+osArch: x86_64
+osName: Mac OS X
+vendor: AdoptOpenJDK
+version: 11.0.4+11
+Parameters(messages -> 10000): 1287.049403 ms
 
-Process finished with exit code 0
+::Benchmark KafkaProducer.sliding::
+cores: 12
+hostname: MBP-Vasilij
+name: OpenJDK 64-Bit Server VM
+osArch: x86_64
+osName: Mac OS X
+vendor: AdoptOpenJDK
+version: 11.0.4+11
+Parameters(messages -> 10000): 1703.3986 ms
 ```
