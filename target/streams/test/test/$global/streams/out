@@ -1,0 +1,220 @@
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(RangeBenchmark, sbt.SubclassFingerprintWrapper@2c405c8a, false, [SuiteSelector])[0m
+[0m[[0m[31merror[0m] [0m[0mjava.lang.ArithmeticException: / by zero[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.jline.utils.Display.update(Display.java:302)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalameter.Log$JLine.clear(Log.scala:244)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalameter.Log$Proxy.clear(Log.scala:120)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalameter.Executor.$anonfun$run$2(Executor.scala:34)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalameter.utils.Tree.$anonfun$map$1(Tree.scala:17)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:237)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.immutable.List.foreach(List.scala:392)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.TraversableLike.map(TraversableLike.scala:237)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.TraversableLike.map$(TraversableLike.scala:230)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.immutable.List.map(List.scala:298)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalameter.utils.Tree.map(Tree.scala:17)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalameter.utils.Tree.$anonfun$map$2(Tree.scala:18)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:237)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.immutable.List.foreach(List.scala:392)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.TraversableLike.map(TraversableLike.scala:237)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.TraversableLike.map$(TraversableLike.scala:230)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.immutable.List.map(List.scala:298)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalameter.utils.Tree.map(Tree.scala:18)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalameter.utils.Tree.$anonfun$map$2(Tree.scala:18)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:237)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.immutable.List.foreach(List.scala:392)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.TraversableLike.map(TraversableLike.scala:237)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.TraversableLike.map$(TraversableLike.scala:230)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.immutable.List.map(List.scala:298)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalameter.utils.Tree.map(Tree.scala:18)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalameter.Executor.$anonfun$run$1(Executor.scala:33)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalameter.Executor.$anonfun$run$1$adapted(Executor.scala:32)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalameter.MonadicDynVar$$anon$1.$anonfun$foreach$1(MonadicDynVar.scala:7)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.util.DynamicVariable.withValue(DynamicVariable.scala:62)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalameter.MonadicDynVar$$anon$1.foreach(MonadicDynVar.scala:7)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalameter.Executor.run(Executor.scala:32)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalameter.Executor.run$(Executor.scala:22)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalameter.execution.LocalExecutor.run(LocalExecutor.scala:54)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalameter.BasePerformanceTest.$anonfun$executeTests$2(performance-test.scala:93)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.util.DynamicVariable.withValue(DynamicVariable.scala:62)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalameter.BasePerformanceTest.executeTests(performance-test.scala:90)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalameter.ScalaMeterFramework$$anon$1.$anonfun$run$2(ScalaMeterFramework.scala:87)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.runtime.java8.JFunction0$mcZ$sp.apply(JFunction0$mcZ$sp.java:23)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalameter.package$.$anonfun$withTestContext$3(package.scala:53)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalameter.package$.$anonfun$withTestContext$3$adapted(package.scala:52)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalameter.MonadicDynVar$$anon$1.$anonfun$foreach$1(MonadicDynVar.scala:7)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.util.DynamicVariable.withValue(DynamicVariable.scala:62)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalameter.MonadicDynVar$$anon$1.foreach(MonadicDynVar.scala:7)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalameter.package$.$anonfun$withTestContext$2(package.scala:52)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalameter.package$.$anonfun$withTestContext$2$adapted(package.scala:51)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalameter.MonadicDynVar$$anon$1.$anonfun$foreach$1(MonadicDynVar.scala:7)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.util.DynamicVariable.withValue(DynamicVariable.scala:62)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalameter.MonadicDynVar$$anon$1.foreach(MonadicDynVar.scala:7)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalameter.package$.$anonfun$withTestContext$1(package.scala:51)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalameter.package$.$anonfun$withTestContext$1$adapted(package.scala:50)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalameter.MonadicDynVar$$anon$1.$anonfun$foreach$1(MonadicDynVar.scala:7)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.util.DynamicVariable.withValue(DynamicVariable.scala:62)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalameter.MonadicDynVar$$anon$1.foreach(MonadicDynVar.scala:7)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalameter.package$.withTestContext(package.scala:50)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalameter.ScalaMeterFramework$$anon$1.run(ScalaMeterFramework.scala:78)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.RunnerWrapper$1.runRunner2(FrameworkWrapper.java:230)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.RunnerWrapper$1.execute(FrameworkWrapper.java:243)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.TestRunner.runTest$1(TestFramework.scala:113)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.TestRunner.run(TestFramework.scala:124)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.TestFramework$$anon$2$$anonfun$$lessinit$greater$1.$anonfun$apply$1(TestFramework.scala:282)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.TestFramework$.sbt$TestFramework$$withContextLoader(TestFramework.scala:246)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.TestFramework$$anon$2$$anonfun$$lessinit$greater$1.apply(TestFramework.scala:282)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.TestFramework$$anon$2$$anonfun$$lessinit$greater$1.apply(TestFramework.scala:282)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.TestFunction.apply(TestFramework.scala:294)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Tests$.processRunnable$1(Tests.scala:347)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Tests$.$anonfun$makeSerial$1(Tests.scala:353)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.std.Transform$$anon$3.$anonfun$apply$2(System.scala:46)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.std.Transform$$anon$4.work(System.scala:67)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Execute.$anonfun$submit$2(Execute.scala:269)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:16)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Execute.work(Execute.scala:278)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Execute.$anonfun$submit$1(Execute.scala:269)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:178)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.CompletionService$$anon$2.call(CompletionService.scala:37)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.lang.Thread.run(Thread.java:834)[0m
+[0m[[0m[31merror[0m] [0m[0mCould not run test RangeBenchmark: java.lang.ArithmeticException: / by zero[0m
+[0m[[0m[0minfo[0m] [0m[0mEndTestGroupErrorEvent(RangeBenchmark, / by zero[0m
+[0m[[0m[0minfo[0m] [0m[0morg.jline.utils.Display.update(Display.java:302)[0m
+[0m[[0m[0minfo[0m] [0m[0morg.scalameter.Log$JLine.clear(Log.scala:244)[0m
+[0m[[0m[0minfo[0m] [0m[0morg.scalameter.Log$Proxy.clear(Log.scala:120)[0m
+[0m[[0m[0minfo[0m] [0m[0morg.scalameter.Executor.$anonfun$run$2(Executor.scala:34)[0m
+[0m[[0m[0minfo[0m] [0m[0morg.scalameter.utils.Tree.$anonfun$map$1(Tree.scala:17)[0m
+[0m[[0m[0minfo[0m] [0m[0mscala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:237)[0m
+[0m[[0m[0minfo[0m] [0m[0mscala.collection.immutable.List.foreach(List.scala:392)[0m
+[0m[[0m[0minfo[0m] [0m[0mscala.collection.TraversableLike.map(TraversableLike.scala:237)[0m
+[0m[[0m[0minfo[0m] [0m[0mscala.collection.TraversableLike.map$(TraversableLike.scala:230)[0m
+[0m[[0m[0minfo[0m] [0m[0mscala.collection.immutable.List.map(List.scala:298)[0m
+[0m[[0m[0minfo[0m] [0m[0morg.scalameter.utils.Tree.map(Tree.scala:17)[0m
+[0m[[0m[0minfo[0m] [0m[0morg.scalameter.utils.Tree.$anonfun$map$2(Tree.scala:18)[0m
+[0m[[0m[0minfo[0m] [0m[0mscala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:237)[0m
+[0m[[0m[0minfo[0m] [0m[0mscala.collection.immutable.List.foreach(List.scala:392)[0m
+[0m[[0m[0minfo[0m] [0m[0mscala.collection.TraversableLike.map(TraversableLike.scala:237)[0m
+[0m[[0m[0minfo[0m] [0m[0mscala.collection.TraversableLike.map$(TraversableLike.scala:230)[0m
+[0m[[0m[0minfo[0m] [0m[0mscala.collection.immutable.List.map(List.scala:298)[0m
+[0m[[0m[0minfo[0m] [0m[0morg.scalameter.utils.Tree.map(Tree.scala:18)[0m
+[0m[[0m[0minfo[0m] [0m[0morg.scalameter.utils.Tree.$anonfun$map$2(Tree.scala:18)[0m
+[0m[[0m[0minfo[0m] [0m[0mscala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:237)[0m
+[0m[[0m[0minfo[0m] [0m[0mscala.collection.immutable.List.foreach(List.scala:392)[0m
+[0m[[0m[0minfo[0m] [0m[0mscala.collection.TraversableLike.map(TraversableLike.scala:237)[0m
+[0m[[0m[0minfo[0m] [0m[0mscala.collection.TraversableLike.map$(TraversableLike.scala:230)[0m
+[0m[[0m[0minfo[0m] [0m[0mscala.collection.immutable.List.map(List.scala:298)[0m
+[0m[[0m[0minfo[0m] [0m[0morg.scalameter.utils.Tree.map(Tree.scala:18)[0m
+[0m[[0m[0minfo[0m] [0m[0morg.scalameter.Executor.$anonfun$run$1(Executor.scala:33)[0m
+[0m[[0m[0minfo[0m] [0m[0morg.scalameter.Executor.$anonfun$run$1$adapted(Executor.scala:32)[0m
+[0m[[0m[0minfo[0m] [0m[0morg.scalameter.MonadicDynVar$$anon$1.$anonfun$foreach$1(MonadicDynVar.scala:7)[0m
+[0m[[0m[0minfo[0m] [0m[0mscala.util.DynamicVariable.withValue(DynamicVariable.scala:62)[0m
+[0m[[0m[0minfo[0m] [0m[0morg.scalameter.MonadicDynVar$$anon$1.foreach(MonadicDynVar.scala:7)[0m
+[0m[[0m[0minfo[0m] [0m[0morg.scalameter.Executor.run(Executor.scala:32)[0m
+[0m[[0m[0minfo[0m] [0m[0morg.scalameter.Executor.run$(Executor.scala:22)[0m
+[0m[[0m[0minfo[0m] [0m[0morg.scalameter.execution.LocalExecutor.run(LocalExecutor.scala:54)[0m
+[0m[[0m[0minfo[0m] [0m[0morg.scalameter.BasePerformanceTest.$anonfun$executeTests$2(performance-test.scala:93)[0m
+[0m[[0m[0minfo[0m] [0m[0mscala.util.DynamicVariable.withValue(DynamicVariable.scala:62)[0m
+[0m[[0m[0minfo[0m] [0m[0morg.scalameter.BasePerformanceTest.executeTests(performance-test.scala:90)[0m
+[0m[[0m[0minfo[0m] [0m[0morg.scalameter.ScalaMeterFramework$$anon$1.$anonfun$run$2(ScalaMeterFramework.scala:87)[0m
+[0m[[0m[0minfo[0m] [0m[0mscala.runtime.java8.JFunction0$mcZ$sp.apply(JFunction0$mcZ$sp.java:23)[0m
+[0m[[0m[0minfo[0m] [0m[0morg.scalameter.package$.$anonfun$withTestContext$3(package.scala:53)[0m
+[0m[[0m[0minfo[0m] [0m[0morg.scalameter.package$.$anonfun$withTestContext$3$adapted(package.scala:52)[0m
+[0m[[0m[0minfo[0m] [0m[0morg.scalameter.MonadicDynVar$$anon$1.$anonfun$foreach$1(MonadicDynVar.scala:7)[0m
+[0m[[0m[0minfo[0m] [0m[0mscala.util.DynamicVariable.withValue(DynamicVariable.scala:62)[0m
+[0m[[0m[0minfo[0m] [0m[0morg.scalameter.MonadicDynVar$$anon$1.foreach(MonadicDynVar.scala:7)[0m
+[0m[[0m[0minfo[0m] [0m[0morg.scalameter.package$.$anonfun$withTestContext$2(package.scala:52)[0m
+[0m[[0m[0minfo[0m] [0m[0morg.scalameter.package$.$anonfun$withTestContext$2$adapted(package.scala:51)[0m
+[0m[[0m[0minfo[0m] [0m[0morg.scalameter.MonadicDynVar$$anon$1.$anonfun$foreach$1(MonadicDynVar.scala:7)[0m
+[0m[[0m[0minfo[0m] [0m[0mscala.util.DynamicVariable.withValue(DynamicVariable.scala:62)[0m
+[0m[[0m[0minfo[0m] [0m[0morg.scalameter.MonadicDynVar$$anon$1.foreach(MonadicDynVar.scala:7)[0m
+[0m[[0m[0minfo[0m] [0m[0morg.scalameter.package$.$anonfun$withTestContext$1(package.scala:51)[0m
+[0m[[0m[0minfo[0m] [0m[0morg.scalameter.package$.$anonfun$withTestContext$1$adapted(package.scala:50)[0m
+[0m[[0m[0minfo[0m] [0m[0morg.scalameter.MonadicDynVar$$anon$1.$anonfun$foreach$1(MonadicDynVar.scala:7)[0m
+[0m[[0m[0minfo[0m] [0m[0mscala.util.DynamicVariable.withValue(DynamicVariable.scala:62)[0m
+[0m[[0m[0minfo[0m] [0m[0morg.scalameter.MonadicDynVar$$anon$1.foreach(MonadicDynVar.scala:7)[0m
+[0m[[0m[0minfo[0m] [0m[0morg.scalameter.package$.withTestContext(package.scala:50)[0m
+[0m[[0m[0minfo[0m] [0m[0morg.scalameter.ScalaMeterFramework$$anon$1.run(ScalaMeterFramework.scala:78)[0m
+[0m[[0m[0minfo[0m] [0m[0msbt.RunnerWrapper$1.runRunner2(FrameworkWrapper.java:230)[0m
+[0m[[0m[0minfo[0m] [0m[0msbt.RunnerWrapper$1.execute(FrameworkWrapper.java:243)[0m
+[0m[[0m[0minfo[0m] [0m[0msbt.TestRunner.runTest$1(TestFramework.scala:113)[0m
+[0m[[0m[0minfo[0m] [0m[0msbt.TestRunner.run(TestFramework.scala:124)[0m
+[0m[[0m[0minfo[0m] [0m[0msbt.TestFramework$$anon$2$$anonfun$$lessinit$greater$1.$anonfun$apply$1(TestFramework.scala:282)[0m
+[0m[[0m[0minfo[0m] [0m[0msbt.TestFramework$.sbt$TestFramework$$withContextLoader(TestFramework.scala:246)[0m
+[0m[[0m[0minfo[0m] [0m[0msbt.TestFramework$$anon$2$$anonfun$$lessinit$greater$1.apply(TestFramework.scala:282)[0m
+[0m[[0m[0minfo[0m] [0m[0msbt.TestFramework$$anon$2$$anonfun$$lessinit$greater$1.apply(TestFramework.scala:282)[0m
+[0m[[0m[0minfo[0m] [0m[0msbt.TestFunction.apply(TestFramework.scala:294)[0m
+[0m[[0m[0minfo[0m] [0m[0msbt.Tests$.processRunnable$1(Tests.scala:347)[0m
+[0m[[0m[0minfo[0m] [0m[0msbt.Tests$.$anonfun$makeSerial$1(Tests.scala:353)[0m
+[0m[[0m[0minfo[0m] [0m[0msbt.std.Transform$$anon$3.$anonfun$apply$2(System.scala:46)[0m
+[0m[[0m[0minfo[0m] [0m[0msbt.std.Transform$$anon$4.work(System.scala:67)[0m
+[0m[[0m[0minfo[0m] [0m[0msbt.Execute.$anonfun$submit$2(Execute.scala:269)[0m
+[0m[[0m[0minfo[0m] [0m[0msbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:16)[0m
+[0m[[0m[0minfo[0m] [0m[0msbt.Execute.work(Execute.scala:278)[0m
+[0m[[0m[0minfo[0m] [0m[0msbt.Execute.$anonfun$submit$1(Execute.scala:269)[0m
+[0m[[0m[0minfo[0m] [0m[0msbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:178)[0m
+[0m[[0m[0minfo[0m] [0m[0msbt.CompletionService$$anon$2.call(CompletionService.scala:37)[0m
+[0m[[0m[0minfo[0m] [0m[0mjava.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)[0m
+[0m[[0m[0minfo[0m] [0m[0mjava.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)[0m
+[0m[[0m[0minfo[0m] [0m[0mjava.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)[0m
+[0m[[0m[0minfo[0m] [0m[0mjava.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)[0m
+[0m[[0m[0minfo[0m] [0m[0mjava.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)[0m
+[0m[[0m[0minfo[0m] [0m[0mjava.base/java.lang.Thread.run(Thread.java:834))[0m
+[0m[[0m[31merror[0m] [0m[0mjava.lang.NullPointerException[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.JUnitXmlTestsListener$TestSuite.$anonfun$stop$2(JUnitXmlTestsListener.scala:114)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:233)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.immutable.List.foreach(List.scala:388)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.generic.TraversableForwarder.foreach(TraversableForwarder.scala:34)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.generic.TraversableForwarder.foreach$(TraversableForwarder.scala:34)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.mutable.ListBuffer.foreach(ListBuffer.scala:43)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.TraversableLike.map(TraversableLike.scala:233)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.TraversableLike.map$(TraversableLike.scala:226)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.AbstractTraversable.map(Traversable.scala:104)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.JUnitXmlTestsListener$TestSuite.stop(JUnitXmlTestsListener.scala:110)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.JUnitXmlTestsListener.$anonfun$writeSuite$3(JUnitXmlTestsListener.scala:235)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.Option.map(Option.scala:146)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.JUnitXmlTestsListener.withTestSuite(JUnitXmlTestsListener.scala:153)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.JUnitXmlTestsListener.writeSuite(JUnitXmlTestsListener.scala:235)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.JUnitXmlTestsListener.endGroup(JUnitXmlTestsListener.scala:207)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.TestRunner.$anonfun$run$8(TestFramework.scala:129)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.TestRunner.$anonfun$run$8$adapted(TestFramework.scala:129)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.TestFramework$.$anonfun$safeForeach$1(TestFramework.scala:150)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.TestFramework$.$anonfun$safeForeach$1$adapted(TestFramework.scala:149)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.Iterator.foreach(Iterator.scala:937)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.Iterator.foreach$(Iterator.scala:937)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.AbstractIterator.foreach(Iterator.scala:1425)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.IterableLike.foreach(IterableLike.scala:70)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.IterableLike.foreach$(IterableLike.scala:69)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.AbstractIterable.foreach(Iterable.scala:54)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.TestFramework$.safeForeach(TestFramework.scala:149)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.TestRunner.safeListenersCall(TestFramework.scala:135)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.TestRunner.run(TestFramework.scala:129)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.TestFramework$$anon$2$$anonfun$$lessinit$greater$1.$anonfun$apply$1(TestFramework.scala:282)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.TestFramework$.sbt$TestFramework$$withContextLoader(TestFramework.scala:246)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.TestFramework$$anon$2$$anonfun$$lessinit$greater$1.apply(TestFramework.scala:282)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.TestFramework$$anon$2$$anonfun$$lessinit$greater$1.apply(TestFramework.scala:282)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.TestFunction.apply(TestFramework.scala:294)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Tests$.processRunnable$1(Tests.scala:347)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Tests$.$anonfun$makeSerial$1(Tests.scala:353)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.std.Transform$$anon$3.$anonfun$apply$2(System.scala:46)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.std.Transform$$anon$4.work(System.scala:67)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Execute.$anonfun$submit$2(Execute.scala:269)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:16)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Execute.work(Execute.scala:278)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Execute.$anonfun$submit$1(Execute.scala:269)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:178)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.CompletionService$$anon$2.call(CompletionService.scala:37)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.lang.Thread.run(Thread.java:834)[0m
+[0m[[0m[31merror[0m] [0m[0mjava.lang.NullPointerException[0m
+[0m[[0m[0mdebug[0m] [0m[0mSummary for ScalaMeter not available.[0m
+[0m[[0m[31merror[0m] [0m[0mError: Total 0, Failed 0, Errors 0, Passed 0[0m
+[0m[[0m[31merror[0m] [0m[0mError during tests:[0m
+[0m[[0m[31merror[0m] [0m[0m	RangeBenchmark[0m
+[0m[[0m[31merror[0m] [0m[0m(Test / [31mtest[0m) sbt.TestsFailedException: Tests unsuccessful[0m
