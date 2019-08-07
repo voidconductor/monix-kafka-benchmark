@@ -1,5 +1,6 @@
 package benchmark
 
+import monix.eval.Task
 import monix.execution.Scheduler
 import monix.kafka.config.Acks
 import monix.kafka.{KafkaProducerConfig, KafkaProducerSink}
@@ -30,24 +31,19 @@ object WanderNBenchmark extends Bench.LocalTime {
     measure method "semaphore" in {
       using(range) in { r =>
         Observables
-          .createSemaphore(arraySlize, 100000, 100)(producer.send("test-1", _))
+          .createSemaphore(arraySlize, 30000, 100)(v => Task {v.map(_ + 1)})
           .completedL
           .runSyncUnsafe()
       }
     }
   }
 
-  performance of "KafkaProducer" in {
+  performance of "WanderN" in {
     measure method "sliding" in {
-      using(range) in { _ =>
-        val arr = new Array[Byte](arraySlize)
-        scala.util.Random.nextBytes(arr)
-        Observable
-          .repeat(arr)
-          .take(100000)
-          .map(a => new ProducerRecord[String, Array[Byte]]("test-1", a))
-          .bufferTimedWithPressure(1.second, 30000)
-          .consumeWith(KafkaProducerSink[String, Array[Byte]](config, sc))
+      using(range) in { r =>
+        Observables
+          .createSliding(arraySlize, 30000, 100)(v => Task {v.map(_ + 1)})
+          .completedL
           .runSyncUnsafe()
       }
     }
