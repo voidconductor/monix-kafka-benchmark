@@ -1,8 +1,8 @@
 package benchmark
 
 import monix.execution.Scheduler
-import monix.kafka.{KafkaProducerConfig, KafkaProducerSink}
 import monix.kafka.config.Acks
+import monix.kafka.{KafkaProducerConfig, KafkaProducerSink}
 import monix.reactive.Observable
 import org.apache.kafka.clients.producer.ProducerRecord
 import org.scalameter.Bench
@@ -24,13 +24,13 @@ object WanderNBenchmark extends Bench.LocalTime {
   val arraySlize = 10 * 1024
 
   val producer = ModifiedProducer[String, Array[Byte]](config, sc)
-  val range = Gen.range("messages")(10000, 10000, 1)
+  val range = Gen.unit("messages")
 
   performance of "WanderN" in {
     measure method "semaphore" in {
       using(range) in { r =>
         Observables
-          .createSemaphore(arraySlize, r, 500, 100)(producer.send("test-1", _))
+          .createSemaphore(arraySlize, 100000, 100)(producer.send("test-1", _))
           .completedL
           .runSyncUnsafe()
       }
@@ -39,14 +39,14 @@ object WanderNBenchmark extends Bench.LocalTime {
 
   performance of "KafkaProducer" in {
     measure method "sliding" in {
-      using(range) in { r =>
+      using(range) in { _ =>
         val arr = new Array[Byte](arraySlize)
         scala.util.Random.nextBytes(arr)
         Observable
           .repeat(arr)
-          .take(r)
+          .take(100000)
           .map(a => new ProducerRecord[String, Array[Byte]]("test-1", a))
-          .bufferIntrospective(500)
+          .bufferTimedWithPressure(1.second, 30000)
           .consumeWith(KafkaProducerSink[String, Array[Byte]](config, sc))
           .runSyncUnsafe()
       }

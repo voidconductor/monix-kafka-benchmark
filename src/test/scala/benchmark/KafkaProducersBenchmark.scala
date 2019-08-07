@@ -22,12 +22,11 @@ object KafkaProducersBenchmark extends Bench.LocalTime {
   val lockFreeProducer = ModifiedProducer[String, Array[Byte]](config, sc)
   val range = Gen.range("messages")(10000, 10000, 1)
 
-
   performance of "KafkaProducer" in {
     measure method "send" in {
       using(range) in { r =>
         Observables
-          .createSemaphore(arraySlize, r, 500, 64)(producer.send("test", _))
+          .createSemaphore(arraySlize, r, 64)(producer.send("test-1", _))
           .completedL
           .runSyncUnsafe()
       }
@@ -38,7 +37,8 @@ object KafkaProducersBenchmark extends Bench.LocalTime {
     measure method "send" in {
       using(range) in { r =>
         Observables
-          .createSemaphore(arraySlize, r, 500, 64)(lockFreeProducer.send("test", _))
+          .createSemaphore(arraySlize, r, 64)(
+            lockFreeProducer.send("test-1", _))
           .completedL
           .runSyncUnsafe()
       }
